@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Menu</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 70px; /* Adjust the padding for the fixed navbar */
+        }
+        .menu-box {
+            background-color: #F4A896;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-color: #358597;
+            border-style: double;
+            margin-bottom: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: black;
+        }
+        .menu-item {
+            font-size: 18px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menuLinks" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Food Menu</a>
+            </div>
+            <div class="collapse navbar-collapse" id="menuLinks">
+                <ul class="nav navbar-nav">
+                    <li><a href="#beef">Beef</a></li>
+                    <li><a href="#sushi">Sushi</a></li>
+                    <li><a href="#chicken">Chicken</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Columns -->
+    <div class="container">
+        <div class="row">
+            <!-- Beef Column -->
+            <div id="beef" class="col-md-4 menu-box">
+                <h2>Beef</h2>
+                <ul>
+                    <li><span class="menu-item">Steak</span></li>
+                    <li><span class="menu-item">Beef Burger</span></li>
+                    <li><span class="menu-item">Beef Stir Fry</span></li>
+                </ul>
+            </div>
+
+            <!-- Sushi Column -->
+            <div id="sushi" class="col-md-4 menu-box">
+                <h2>Sushi</h2>
+                <ul>
+                    <li><span class="menu-item">California Roll</span></li>
+                    <li><span class="menu-item">Spicy Tuna Roll</span></li>
+                    <li><span class="menu-item">Salmon Nigiri</span></li>
+                </ul>
+            </div>
+
+            <!-- Chicken Column -->
+            <div id="chicken" class="col-md-4 menu-box">
+                <h2>Chicken</h2>
+                <ul>
+                    <li><span class="menu-item">Grilled Chicken</span></li>
+                    <li><span class="menu-item">Fried Chicken</span></li>
+                    <li><span class="menu-item">Chicken Wings</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
+
